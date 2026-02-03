@@ -2,6 +2,13 @@
 
 <!-- towncrier release notes start -->
 
+
+
+- allow zero length straight rings [#199](https://github.com/gdsfactory/cspdk/pull/199)
+- Bump actions/checkout from 5 to 6 [#190](https://github.com/gdsfactory/cspdk/pull/190)
+- update changelog [#193](https://github.com/gdsfactory/cspdk/pull/193)
+- remove samples from wheel [#194](https://github.com/gdsfactory/cspdk/pull/194)
+
 ## [1.4.1](https://github.com/gdsfactory/cspdk/releases/tag/v1.4.1) - 2026-01-05
 
 - update gdsfactory 9.29.1
