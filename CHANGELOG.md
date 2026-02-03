@@ -2,6 +2,9 @@
 
 <!-- towncrier release notes start -->
 
+## [1.4.2](https://github.com/gdsfactory/cspdk/releases/tag/v1.4.2) - 2026-02-03
+
+No significant changes.
 
 
 - allow zero length straight rings [#199](https://github.com/gdsfactory/cspdk/pull/199)
