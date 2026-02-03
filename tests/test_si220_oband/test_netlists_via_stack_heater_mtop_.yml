@@ -1,5 +1,5 @@
 instances:
-  compass_gdsfactorypcomponentspshapespcompass_S20_10_LHE_5faab884_0_0:
+  compass:
     component: compass
     info: {}
     settings:
@@ -15,7 +15,7 @@ instances:
       size:
       - 20
       - 10
-  compass_gdsfactorypcomponentspshapespcompass_S20_10_LPA_3ff70b43_0_0:
+  compass2:
     component: compass
     info: {}
     settings:
@@ -31,21 +31,20 @@ instances:
       size:
       - 20
       - 10
-name: via_stack_heater_mtop_S20_10
 nets: []
 placements:
-  compass_gdsfactorypcomponentspshapespcompass_S20_10_LHE_5faab884_0_0:
+  compass:
     mirror: false
     rotation: 0
     x: 0
     y: 0
-  compass_gdsfactorypcomponentspshapespcompass_S20_10_LPA_3ff70b43_0_0:
+  compass2:
     mirror: false
     rotation: 0
     x: 0
     y: 0
 ports:
-  e1: compass_gdsfactorypcomponentspshapespcompass_S20_10_LPA_3ff70b43_0_0,e1
-  e2: compass_gdsfactorypcomponentspshapespcompass_S20_10_LPA_3ff70b43_0_0,e2
-  e3: compass_gdsfactorypcomponentspshapespcompass_S20_10_LPA_3ff70b43_0_0,e3
-  e4: compass_gdsfactorypcomponentspshapespcompass_S20_10_LPA_3ff70b43_0_0,e4
+  e1: compass2,e1
+  e2: compass2,e2
+  e3: compass2,e3
+  e4: compass2,e4

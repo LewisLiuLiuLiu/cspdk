@@ -1,5 +1,5 @@
 instances:
-  coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_0_0:
+  coupler_ring:
     component: coupler_ring
     info:
       radius: 10
@@ -11,7 +11,7 @@ instances:
       length_x: 0.01
       radius: 10
       straight: straight
-  coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_m10_21450_A180:
+  coupler_ring2:
     component: coupler_ring
     info:
       radius: 10
@@ -23,7 +23,7 @@ instances:
       length_x: 0.01
       radius: 10
       straight: straight
-  straight_L0p01_CSstrip_WNone_N2_10000_10730_A270:
+  straight:
     component: straight
     info:
       length: 0.01
@@ -37,7 +37,7 @@ instances:
       length: 0.01
       npoints: 2
       width: null
-  straight_L0p01_CSstrip_WNone_N2_m10010_10720_A90:
+  straight2:
     component: straight
     info:
       length: 0.01
@@ -51,39 +51,38 @@ instances:
       length: 0.01
       npoints: 2
       width: null
-name: ring_double_G0p27_GTNone_GBNone_R10_LX0p01_LY0p01_CSstrip_LE10
 nets:
-- p1: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_0_0,o2
-  p2: straight_L0p01_CSstrip_WNone_N2_m10010_10720_A90,o1
-- p1: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_0_0,o3
-  p2: straight_L0p01_CSstrip_WNone_N2_10000_10730_A270,o2
-- p1: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_m10_21450_A180,o2
-  p2: straight_L0p01_CSstrip_WNone_N2_10000_10730_A270,o1
-- p1: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_m10_21450_A180,o3
-  p2: straight_L0p01_CSstrip_WNone_N2_m10010_10720_A90,o2
+- p1: coupler_ring2,o2
+  p2: straight,o1
+- p1: coupler_ring2,o3
+  p2: straight2,o2
+- p1: coupler_ring,o2
+  p2: straight2,o1
+- p1: coupler_ring,o3
+  p2: straight,o2
 placements:
-  coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_0_0:
-    mirror: false
-    rotation: 0
-    x: 0
-    y: 0
-  coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_m10_21450_A180:
+  coupler_ring:
     mirror: false
     rotation: 180
     x: -0.01
     y: 21.45
-  straight_L0p01_CSstrip_WNone_N2_10000_10730_A270:
+  coupler_ring2:
     mirror: false
-    rotation: 270
-    x: 10
-    y: 10.73
-  straight_L0p01_CSstrip_WNone_N2_m10010_10720_A90:
+    rotation: 0
+    x: 0
+    y: 0
+  straight:
     mirror: false
     rotation: 90
     x: -10.01
     y: 10.72
+  straight2:
+    mirror: false
+    rotation: 270
+    x: 10
+    y: 10.73
 ports:
-  o1: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_0_0,o1
-  o2: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_0_0,o4
-  o3: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_m10_21450_A180,o4
-  o4: coupler_ring_LX0p01_G0p27_R10_Bbend_euler_Sstraight_CSstrip_LE10_m10_21450_A180,o1
+  o1: coupler_ring2,o1
+  o2: coupler_ring2,o4
+  o3: coupler_ring,o4
+  o4: coupler_ring,o1
